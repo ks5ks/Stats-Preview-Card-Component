@@ -115,6 +115,7 @@ body {
     grid-column-start: 1;
     grid-row-start: 1;
     margin-top: 0;
+    padding-top: 2rem;
     border-radius: 0.5rem 0 0 0.5rem;
   }
 
@@ -125,6 +126,10 @@ body {
   .stats {
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .statistic {
+    margin-bottom: 0rem;
   }
 }
 

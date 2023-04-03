@@ -36,23 +36,25 @@ body {
 
 .image-overlay {
   background: var(--background-violent);
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .image {
-  border-radius: 0.5rem 0.5rem 0 0;
   width: 100%;
-  /* background-color: var(--background-violent); */
   opacity: 0.3;
 }
 
 .information {
   display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  text-align: center;
+  grid-template-rows: 1fr 1fr;
   background-color: var(--background-card-bg);
   border-radius: 0 0 0.5rem 0.5rem;
   margin-top: -5px;
+}
+
+.info {
+  align-items: center;
+  text-align: center;
 }
 
 .info-header {
@@ -77,6 +79,8 @@ body {
 .stats {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .statistic {
@@ -100,6 +104,7 @@ body {
 
   .image-overlay {
     grid-column-start: 2;
+    border-radius: 0 0.5rem 0.5rem 0;
   }
 
   .image {
@@ -107,10 +112,14 @@ body {
   }
 
   .information {
-    flex-direction: row;
     grid-column-start: 1;
     grid-row-start: 1;
     margin-top: 0;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  .info-description {
+    margin-bottom: 0rem;
   }
 
   .stats {
